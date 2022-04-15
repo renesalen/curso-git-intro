@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flujo de trabajo de GIT</h1>
+    <img src="images/fllujoTrabajoGit.png" alt="">
+    <h3>Working Directory</h3>
+    <p>Hizimos nuestro 'git init' para indicar que estamos iniciando nuestro trabajo. Los Archivos (html, css, js, images/) aún no tienen no tienen seguimiento</p>
+    <p>¿Cómo Sabemos qué archivos no tienen seguimiento?</p>
+    <p> con: 'git status -s'nos va pintar si los archivos se modificaron, se eliminaron o si se crearon</p>
+    <p>después de enter el '-s' nos va pintar ¿?</p>
+    <p>Una vez que nosotros tenemos identificado los archivos que queremos guardar, GIT va tomar arreglos provisorios para que a futuro si hacemos cambios podamos volver a esta version</p>
+    <h3>Staging Area, o Area Temporal</h3>
+    <p>Se trata del AREA LOCAL. Para hacer un seguimiento debemos enviar el archivo a esta area local con: 'git add' indicando los archivos a ser agregados: 'git add index.html'. ( si no hay mensajes en el terminal, es señal que va funcionando bien)</p>
+    <p>Cuando hacemos otra vez: 'git status -s' en la lista 'index.html' aparece con una A adelante (añadido al Area Temporal)</p>
+    <h3>Local Repo o Repositorio Local</h3>
+    <p>Del Area local podemos enviar al REPOSITORIO LOCAL con: 'git commit'. El commit es una FOTOGRAFIA que se guarda en el REPOSITORIO, es una especie de albun de imagenes. El COMMIT es el que nos permite el viaje en el tiempo </p>
+    <p>Para tomar una foto (y enviarlo al Repositorio) hacemos: 'git commit -m "agregamos el index.html". Enter y aparece que se nos agregó un archivo. (la -m es para agregar un mensaje)</p>
+    <p>Una vez el archivo agregado al repositorio, el nombre del archivo en la lista VScode pierde su color verde y la letra A que lo sigue</p>
+    <p>a los Proyectos ses llaman Repositorios en Git</p>
+    
+    <script src="app.js"></script>
+</body>
+</html>
